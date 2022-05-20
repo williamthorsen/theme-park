@@ -1,0 +1,9 @@
+{
+  "name": "theme-park",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CM1040 Theme Park assignment",
+  "repository": "git@github.com:williamthorsen/theme-park.git",
+  "license": "UNLICENSED",
+  "author": "William Thorsen <william@thorsen.dev>"
+}
