@@ -5,5 +5,11 @@
   "description": "CM1040 Theme Park assignment",
   "repository": "git@github.com:williamthorsen/theme-park.git",
   "license": "UNLICENSED",
-  "author": "William Thorsen <william@thorsen.dev>"
+  "author": "William Thorsen <william@thorsen.dev>",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "scripts": {
+    "start": "yarn http-server -o --port 4040"
+  }
 }
