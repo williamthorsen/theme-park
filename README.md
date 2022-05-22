@@ -1,5 +1,9 @@
 # CM1040 Theme Park Assignment
 
+## Documentation
+
+See the [wireframe image](docs/wireframe.md).
+
 ## Links
 
 ### Assignments
