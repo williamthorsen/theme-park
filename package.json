@@ -17,9 +17,13 @@
   },
   "scripts": {
     "lint": "yarn run lint:html && yarn run lint:js && yarn run lint:css",
-    "lint:html": "eslint --config=.eslintrc.html.js --ext=.html --no-eslintrc public",
-    "lint:js": "eslint --ext=.html,.js .",
     "lint:css": "stylelint 'public/**/*.css'",
+    "lint:css:fix": "stylelint --fix 'public/**/*.css'",
+    "lint:fix": "yarn run lint:html:fix && yarn run lint:js:fix && yarn run lint:css:fix",
+    "lint:html": "eslint --config=.eslintrc.html.js --ext=.html --no-eslintrc public",
+    "lint:html:fix": "eslint --config=.eslintrc.html.js --ext=.html --fix --no-eslintrc public",
+    "lint:js": "eslint --ext=.html,.js .",
+    "lint:js:fix": "eslint --ext=.html,.js --fix .",
     "start": "yarn http-server -o --port 4040"
   }
 }
