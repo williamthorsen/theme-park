@@ -7,9 +7,12 @@
   "license": "UNLICENSED",
   "author": "William Thorsen <william@thorsen.dev>",
   "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-plugin-html": "^6.2.0",
     "http-server": "^14.1.0"
   },
   "scripts": {
+    "lint": "eslint --ext=.html,.js .",
     "start": "yarn http-server -o --port 4040"
   }
 }
