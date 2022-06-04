@@ -11,6 +11,12 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['*.html'],
+      rules: {
+        'no-multiple-empty-lines': ['warn', { 'max': 2, 'maxBOF': 1, 'maxEOF': 0 }],
+      },
+    },
+    {
       files: ['*.js'],
       rules: {
         'indent': ['warn', 2, { SwitchCase: 1 }],
@@ -71,6 +77,8 @@ module.exports = {
   settings: {
     html: {
       // Add any `eslint-plugin-html` settings here. See https://github.com/BenoitZugmeyer/eslint-plugin-html
+      indent: '+2',
+      'report-bad-indent': 'warn',
     },
   },
 };

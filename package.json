@@ -7,6 +7,8 @@
   "license": "UNLICENSED",
   "author": "William Thorsen <william@thorsen.dev>",
   "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.13.1",
+    "@html-eslint/parser": "^0.13.1",
     "eslint": "^8.17.0",
     "eslint-plugin-html": "^6.2.0",
     "http-server": "^14.1.0",
@@ -14,7 +16,8 @@
     "stylelint-config-standard": "^25.0.0"
   },
   "scripts": {
-    "lint": "yarn run lint:js && yarn run lint:css",
+    "lint": "yarn run lint:html && yarn run lint:js && yarn run lint:css",
+    "lint:html": "eslint --config=.eslintrc.html.js --ext=.html --no-eslintrc public",
     "lint:js": "eslint --ext=.html,.js .",
     "lint:css": "stylelint 'public/**/*.css'",
     "start": "yarn http-server -o --port 4040"
