@@ -12,7 +12,9 @@
 
 ## Documentation
 
-See the [wireframe image](docs/wireframe.md).
+* [Content](docs/content.md)
+* [Directory structure](docs/directory-structure.md)
+* [Wireframe image](docs/wireframe.md)
 
 ## Development
 
