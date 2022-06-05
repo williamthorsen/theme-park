@@ -9,8 +9,8 @@
         ├── attraction1.html
     │   └── attraction2.html
     └── shop/
-        ├── section1/
-        └── section2/
+        ├── product1.html
+        └── product2.html
 
 ## Stylesheet structure
 
