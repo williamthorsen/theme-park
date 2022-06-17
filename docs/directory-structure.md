@@ -5,12 +5,11 @@
     │   └── style.css
     ├── images/
     ├── index.html
-    ├── attractions/
+    ├── attractions/  <-- we won't show this
         ├── attraction1.html
     │   └── attraction2.html
     └── shop/
-        ├── section1/
-        └── section2/
+        └── index.html
 
 ## Stylesheet structure
 
