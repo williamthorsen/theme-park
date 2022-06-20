@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+:root {
+  --primary: #ff69b4;
+  --secondary: #444444;
+  --section-padding: 20px;
+}
+
 /* ----- COMMON ELEMENTS ----- */
 
 * {
@@ -25,15 +31,9 @@ body {
   padding: 12px;
 }
 
-.section-y-padding {
-  padding: 20px 0;
-}
-
-.row {
+.column {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .flex-grow {
@@ -51,21 +51,24 @@ body {
 
 /* NAVBAR */
 .navbar {
-  margin-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+
 }
+
 .logo-font {
   font-family: 'Lobster Two', 'Times New Roman', serif;
   font-size: 3rem;
 }
+
 a.logo-font:link,
 a.logo-font:visited {
-  color: deeppink;
+  color: var(--primary);
   text-decoration: none;
-}
-
-.navbar {
-  gap: 20px;
-  justify-content: flex-end;
 }
 
 /* FOOTER */
@@ -89,6 +92,7 @@ a.logo-font:visited {
   top: 0;
   left: 0;
   z-index: 10;
+  padding: var(--section-padding) 0;
 }
 
 .header .content,
@@ -102,6 +106,10 @@ a.logo-font:visited {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+#welcome {
+  padding: var(--section-padding) 0;
 }
 
 /* ----- END HOME PAGE ----- */
