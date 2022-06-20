@@ -2,15 +2,52 @@
 
 /* ----- COMMON ELEMENTS ----- */
 
-/* LAYOUT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Nunito', 'Arial', sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* GENERAL LAYOUT */
+.x-constraint {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.section-padding {
+
+}
 
 /* HEADINGS */
+.h1 {
+  font-family: 'Cherry Swash', 'Times New Roman', serif;
+}
 
 /* LINKS */
 
 /* BUTTONS */
 
 /* NAVBAR */
+.logo-font {
+  font-family: 'Lobster Two', 'Times New Roman', serif;
+  font-size: 3rem;
+}
+a.logo-font:link,
+a.logo-font:visited {
+  color: deeppink;
+  text-decoration: none;
+}
 
 /* FOOTER */
 
