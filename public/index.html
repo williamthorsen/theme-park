@@ -14,20 +14,23 @@
   </head>
   <body>
     <!-- Menu bar -->
-    <nav class="navbar x-constraint">
-      <div class="flex-grow">
-        <a class="logo-font" href="/">Candyland</a>
+    <nav class="x-constraint navbar">
+      <div>
+        <div class="flex-grow">
+          <a class="logo-font" href="/">Candyland</a>
+        </div>
+        <a href="/">Home</a>
+        <span class="disabled-link">Attractions</span>
+        <span class="disabled-link">Tickets</span>
+        <a href="/shop">Shop</a>
+        <span>Profile</span>
+        <button>Contact us</button>
       </div>
-      <a href="/">Home</a>
-      <span class="disabled-link">Attractions</span>
-      <span class="disabled-link">Tickets</span>
-      <a href="/shop">Shop</a>
-      <span>Profile</span>
-      <button>Contact us</button>
+
     </nav>
 
     <main>
-      <header class="header">
+      <header>
         <img
           class="header"
           src="https://via.placeholder.com/1200x200.png"
@@ -42,44 +45,46 @@
 
       <!-- Welcome to Candyland -->
       <section id="welcome" class="x-constraint">
-        <h1>Candyland</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
+        <div>
+          <h1>Candyland</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+        </div>
       </section>
 
-      <hr>
-
-      <section id="attractions" class="column x-constraint section-y-padding">
-        <h2>Attractions</h2>
-        <div>
-          <div class="attraction">
-            <a href="/attractions/chocolate-fondue-ride">
-              <h3>Chocolate Fondue Ride</h3>
-              <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Chocolate Fondue Ride">
-            </a>
-            <p>
+      <!-- Attractions section -->
+      <section id="attractions" class="column">
+        <div class="wrapper x-constraint">
+          <h2>Attractions</h2>
+          <div class="attractions">
+            <div class="attraction">
               <a href="/attractions/chocolate-fondue-ride">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                <h3>Chocolate Fondue Ride</h3>
+                <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Chocolate Fondue Ride">
               </a>
-            </p>
-          </div>
-          <div class="attraction">
-            <h3>Sugar Mountain Rollercoaster</h3>
-            <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Sugar Mountain Rollercoaster">
-            <p>
-              Neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet.
-            </p>
-          </div>
-          <div class="attraction">
-            <h3>Candyland Factory Tour</h3>
-            <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Candyland Factory Tour">
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+            </div>
+            <div class="attraction">
+              <h3>Sugar Mountain Rollercoaster</h3>
+              <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Sugar Mountain Rollercoaster">
+              <p>
+                Neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet.
+              </p>
+            </div>
+            <div class="attraction">
+              <h3>Candyland Factory Tour</h3>
+              <img src="https://via.placeholder.com/250x250.png" alt="Placeholder for Candyland Factory Tour">
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </p>
+            </div>
           </div>
         </div>
+
       </section>
 
       <hr>
