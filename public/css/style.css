@@ -25,8 +25,19 @@ body {
   padding: 12px;
 }
 
-.section-padding {
+.section-y-padding {
+  padding: 20px 0;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-grow {
+  flex-grow: 2;
 }
 
 /* HEADINGS */
@@ -47,6 +58,11 @@ a.logo-font:link,
 a.logo-font:visited {
   color: deeppink;
   text-decoration: none;
+}
+
+.navbar {
+  gap: 20px;
+  justify-content: flex-end;
 }
 
 /* FOOTER */
