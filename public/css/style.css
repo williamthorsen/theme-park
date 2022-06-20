@@ -1,24 +1,29 @@
 @charset "utf-8";
 
-/* CLEARFIX */
-.clearfix::after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
+/* ----- COMMON ELEMENTS ----- */
 
-.clearfix {
-  display: inline-block;
-}
+/* LAYOUT */
 
-* html .clearfix {
-  height: 1%;
-}
+/* HEADINGS */
 
-html[xmlns] .clearfix {
-  display: block;
-}
-/* /END CLEARFIX */
+/* LINKS */
+
+/* BUTTONS */
+
+/* NAVBAR */
+
+/* FOOTER */
+
+/* ----- END COMMON ELEMENTS ----- */
+
+
+/* ----- ATTRACTIONS PAGE ----- */
+
+
+/* ----- END ATTRACTIONS PAGE ----- */
+
+
+/* ----- SHOP PAGE ----- */
+
+
+/* ----- END SHOP PAGE ----- */
