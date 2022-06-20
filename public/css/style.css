@@ -54,7 +54,7 @@ body {
 .navbar {
   border-bottom: 1px solid #eee;
 }
-.navbar div {
+.navbar .content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,6 +74,16 @@ a.logo-font:visited {
 }
 
 /* FOOTER */
+
+footer .content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: var(--section-padding-x) var(--section-padding-y);
+}
+footer .content div {
+  flex-grow: 1;
+}
 
 /* ----- END COMMON ELEMENTS ----- */
 
