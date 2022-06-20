@@ -50,6 +50,9 @@ body {
 /* BUTTONS */
 
 /* NAVBAR */
+.navbar {
+  margin-bottom: 1px solid #eee;
+}
 .logo-font {
   font-family: 'Lobster Two', 'Times New Roman', serif;
   font-size: 3rem;
