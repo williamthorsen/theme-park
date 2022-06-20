@@ -81,6 +81,7 @@ a.logo-font:visited {
 /* ----- HOME PAGE ----- */
 header {
   position: relative;
+  margin-bottom: var(--section-padding-y);
 }
 
 header img {
@@ -143,6 +144,20 @@ header .content div {
 
 #attractions .attraction img {
   width: 100%;
+}
+
+#social .content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: var(--section-padding-x) var(--section-padding-y);
+}
+
+#social .content div {
+  flex-grow: 1;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ----- END HOME PAGE ----- */
