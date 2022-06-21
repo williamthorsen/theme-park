@@ -175,6 +175,22 @@ header .content div {
 /* ----- END HOME PAGE ----- */
 
 /* ----- ATTRACTIONS PAGE ----- */
+#categories .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: var(--section-padding-x) var(--section-padding-y);
+}
+
+#categories .category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#categories .category img {
+  width: 100%;
+}
 
 /* ----- END ATTRACTIONS PAGE ----- */
 
