@@ -2,7 +2,7 @@
 
 :root {
   --primary: #ff69b4;
-  --secondary: #444444;
+  --secondary: #444;
   --section-padding-y: 20px;
   --section-padding-x: 20px;
 }
@@ -19,7 +19,7 @@ html,
 body {
   background-color: #fff;
   color: #555;
-  font-family: 'Nunito', 'Arial', sans-serif;
+  font-family: Nunito, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   overflow-x: hidden;
@@ -43,7 +43,7 @@ body {
 
 /* HEADINGS */
 .h1 {
-  font-family: 'Cherry Swash', 'Times New Roman', serif;
+  font-family: "Cherry Swash", "Times New Roman", serif;
 }
 
 /* LINKS */
@@ -64,7 +64,7 @@ body {
 }
 
 .logo-font {
-  font-family: 'Lobster Two', 'Times New Roman', serif;
+  font-family: "Lobster Two", "Times New Roman", serif;
   font-size: 2.3rem;
   padding: 4px 0;
 }
@@ -83,12 +83,12 @@ footer .content {
   gap: 30px;
   padding: var(--section-padding-x) var(--section-padding-y);
 }
+
 footer .content div {
   flex-grow: 1;
 }
 
 /* ----- END COMMON ELEMENTS ----- */
-
 
 /* ----- HOME PAGE ----- */
 header {
@@ -123,11 +123,11 @@ header .content div {
   padding: var(--section-padding-x) var(--section-padding-y);
 }
 
-#welcome {
+.hero {
   padding: var(--section-padding-x) var(--section-padding-y);
 }
 
-#welcome div {
+.hero div {
   display: flex;
   flex-direction: column;
 }
@@ -174,14 +174,10 @@ header .content div {
 
 /* ----- END HOME PAGE ----- */
 
-
 /* ----- ATTRACTIONS PAGE ----- */
-
 
 /* ----- END ATTRACTIONS PAGE ----- */
 
-
 /* ----- SHOP PAGE ----- */
-
 
 /* ----- END SHOP PAGE ----- */
