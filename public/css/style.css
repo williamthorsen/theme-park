@@ -178,7 +178,13 @@ header.landing .content div {
 
 /* ----- END HOME PAGE ----- */
 
-/* ----- ATTRACTIONS PAGE ----- */
+/* ----- ATTRACTION PAGE ----- */
+
+
+/* ----- END ATTRACTIONS PAGE ----- */
+
+/* ----- SHOP PAGE ----- */
+
 #categories .wrapper {
   display: flex;
   flex-direction: row;
@@ -227,9 +233,5 @@ header.landing .content div {
 #category .product-card img {
   max-height: 18rem;
 }
-
-/* ----- END ATTRACTIONS PAGE ----- */
-
-/* ----- SHOP PAGE ----- */
 
 /* ----- END SHOP PAGE ----- */
