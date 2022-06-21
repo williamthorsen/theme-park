@@ -55,11 +55,15 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-.navbar .content {
+.navbar .content,
+.navbar .flex-grow {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
+}
+
+.navbar .content {
   padding: 4px var(--section-padding-x);
 }
 
