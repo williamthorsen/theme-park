@@ -192,6 +192,16 @@ header .content div {
   width: 100%;
 }
 
+#promotions {
+  background-color: #eee;
+}
+
+#promotions .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding-x) var(--section-padding-y);
+}
+
 /* ----- END ATTRACTIONS PAGE ----- */
 
 /* ----- SHOP PAGE ----- */
