@@ -25,6 +25,16 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 2;
+}
+
 /* GENERAL LAYOUT */
 .x-constraint {
   max-width: 1200px;
@@ -182,6 +192,9 @@ header.landing .content div {
 
 .attraction-hero {
   background-image: url("https://via.placeholder.com/1200x400.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 20rem;
 }
 
@@ -226,6 +239,24 @@ header.landing .content div {
   gap: 30px;
   text-transform: uppercase;
   font-size: 0.875rem;
+}
+
+#attraction-description .content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 33%;
+  padding: var(--section-padding-y) var(--section-padding-x);
+
+}
+
+#attraction-description .copy {
+  display: flex;
+  flex-direction: column;
+}
+
+#attraction-description img {
+  object-fit: cover;
+  width: 100%;
 }
 
 /* ----- END ATTRACTIONS PAGE ----- */
