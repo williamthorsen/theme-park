@@ -2,7 +2,7 @@
 
 :root {
   --primary: #ff69b4;
-  --secondary: #444;
+  --secondary: #f69707;
   --section-padding-y: 40px;
   --section-padding-x: 20px;
 }
@@ -57,6 +57,14 @@ main {
 }
 
 /* LINKS */
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover {
+  color: #faaf36;
+}
 
 /* BUTTONS */
 .primary-button,
@@ -64,10 +72,15 @@ main {
   background-color: var(--primary);
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
   padding: 10px 16px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--primary);
+}
+
+.outlined-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
 }
 
 /* NAVBAR */
@@ -96,9 +109,7 @@ main {
 a.logo-font:link,
 a.logo-font:visited {
   color: var(--primary);
-  text-decoration: none;
 }
-
 /* FOOTER */
 
 footer .content {
