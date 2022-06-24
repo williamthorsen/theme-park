@@ -7,77 +7,76 @@
     <!-- Link to stylesheets  -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Lobster+Two:wght@400;700&family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Link to favicon -->
   </head>
   <body>
-    <!-- Menu bar -->
-    <nav>
-      <a href="/">
-        <img src="https://via.placeholder.com/128x32.png" alt="Placeholder for logo">
-      </a>
-      <a href="/">Home</a>
-      <span class="disabled-link">Attractions</span>
-      <span class="disabled-link">Tickets</span>
-      <a href="/shop">Shop</a>
-      <span>Profile</span>
-      <button>Contact us</button>
+  <!-- Menu bar -->
+    <nav class="navbar">
+      <div class="content x-constraint">
+        <div class="flex-grow">
+          <a class="logo-font" href="/">Candyland</a>
+          <a href="/">Home</a>
+          <span class="disabled-link">Attractions</span>
+          <span class="disabled-link">Tickets</span>
+          <a href="/shop">Shop</a>
+        </div>
+        <span>Profile</span>
+        <button>Contact us</button>
+      </div>
     </nav>
 
-    <hr>
-
     <main>
-      <header>
-        <h1>Chocolate Fondue Ride</h1>
-        <img src="https://via.placeholder.com/1200x400.png" alt="Placeholder for attraction image">
-        <div>
-          <blockquote>
-            The chocolatey thrill of a lifetime!
-          </blockquote>
-        </div>
-        <div>
-          <div id="attraction_restrictions">
-            Thrill level: Scary! Age: 10 and up. Height: 120 cm and up.
+      <header class="attraction-hero">
+        <div class="content x-constraint">
+          <h1>Chocolate Fondue Ride</h1>
+          <div class="quote-wrapper">
+            <div class="quote">
+              <blockquote>
+                The chocolatey thrill of a lifetime!
+              </blockquote>
+            </div>
           </div>
-          <button id="tickets">Buy tickets</button>
         </div>
       </header>
 
-      <hr>
-
-      <section id="attraction_description">
-        <h2>About the ride</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-        </p>
-        <img src="https://via.placeholder.com/1200x200.png" alt="Placeholder for header image">
-        <div id="attraction_details">
-          <ul>
-            <li>Duration: 8 minutes</li>
-            <li>Cost: 16 tickets</li>
-            <li>...</li>
-          </ul>
+      <section id="attraction-overview">
+        <div class="content x-constraint">
+          <div id="attraction-restrictions">
+            <span>Thrill level: Scary!</span>
+            <span>Age: 10 and up</span>
+            <span>Height: 120 cm and up</span>
+          </div>
+          <button id="tickets">Buy tickets</button>
         </div>
       </section>
 
-      <hr>
-
-      <section id="social">
-        <div>
-          <h3>
-            Comments and reviews
-          </h3>
-        </div>
-        <div>
-          <h3>
-            Park news
-          </h3>
+      <section id="attraction-description">
+        <div class="content x-constraint">
+          <div class="copy">
+            <h2>About the ride</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+            <div class="details">
+              <ul>
+                <li>Duration: 8 minutes</li>
+                <li>Cost: 16 tickets</li>
+                <li>Maximum speed: 20km/h</li>
+              </ul>
+            </div>
+          </div>
+          <figure>
+            <img src="https://via.placeholder.com/1200x200.png" alt="Placeholder for header image">
+            <figcaption>First-person perspective photo of the ride.</figcaption>
+          </figure>
         </div>
       </section>
+    </main>
 
-      <hr>
-
-      <!-- Footer: Copy from Home page -->
-      <footer>
+    <!-- Footer: Copy from Home page -->
+    <footer>
+      <div class="content x-constraint">
         <div>
           <h4>Things to do</h4>
           <ul>
@@ -113,7 +112,7 @@
             <li>Qui dolorem ipsum</li>
           </ul>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
