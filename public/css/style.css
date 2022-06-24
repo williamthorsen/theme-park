@@ -132,6 +132,10 @@ a:hover {
   padding: 4px var(--section-padding-x);
 }
 
+.navbar .active {
+  border-bottom: 2px solid var(--secondary);
+}
+
 .logo-font {
   font-family: "Lobster Two", "Times New Roman", serif;
   font-weight: 400;
