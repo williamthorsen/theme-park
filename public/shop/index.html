@@ -7,7 +7,10 @@
     <!-- Link to stylesheets  -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Lobster+Two:wght@400;700&family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&family=Lobster+Two:wght@400&family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    >
     <!-- Link to favicon -->
   </head>
   <body>
@@ -19,43 +22,55 @@
           <a href="/">Home</a>
           <span class="disabled-link">Attractions</span>
           <span class="disabled-link">Tickets</span>
-          <a href="/shop">Shop</a>
+          <a href="/shop" class="active">Shop</a>
         </div>
         <span>Profile</span>
-        <button>Contact us</button>
+        <button class="outlined-button">Contact us</button>
       </div>
     </nav>
 
     <main>
-      <header>
+      <header class="banner">
         <div class="hero x-constraint">
-          <h1>Candyland Shop</h1>
+          <h1 class="h1">Candyland Shop</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </p>
         </div>
       </header>
 
+      <!-- Categories of shops section -->
       <section id="categories">
         <div class="wrapper x-constraint">
-          <div class="category">
-            <img src="https://via.placeholder.com/200x200.png" alt="Placeholder for category image">
-            <h3>Category 1</h3>
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656045199/wm-theme-park/bill-nino-alyjAglbnF0-unsplash_rpkqth.jpg"
+              alt="Image of candy in containers"
+            >
+            <h3 class="h3">Candies</h3>
             <p>Category description</p>
           </div>
-          <div class="category">
-            <img src="https://via.placeholder.com/200x200.png" alt="Placeholder for category image">
-            <h3>Category 2</h3>
+          <div class="card">
+            <img src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656046316/wm-theme-park/june-gathercole-CDt2jVuSkh4-unsplash_kjpwxz.jpg"
+              alt="Close-up image of fluffy white and pink unicorns"
+            >
+            <h3 class="h3">Toys</h3>
             <p>Category description</p>
           </div>
-          <div class="category">
-            <img src="https://via.placeholder.com/200x200.png" alt="Placeholder for category image">
-            <h3>Category 3</h3>
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656046083/wm-theme-park/martin-adams-zbPDL84kvRg-unsplash_bokoem.jpg"
+              alt="Colourful shoes on a rack"
+            >
+            <h3 class="h3">Apparel</h3>
             <p>Category description</p>
           </div>
-          <div class="category">
-            <img src="https://via.placeholder.com/200x200.png" alt="Placeholder for category image">
-            <h3>Category 4</h3>
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656046418/wm-theme-park/ulysse-pointcheval-1WmlAiYgnoI-unsplash_fgleqj.jpg"
+              alt="Placeholder for category image"
+            >
+            <h3 class="h3">Baked goods</h3>
             <p>Category description</p>
           </div>
         </div>
@@ -63,7 +78,7 @@
 
       <section id="promotions">
         <div class="wrapper x-constraint">
-          <h3>Promotions</h3>
+          <h2 class="h2">Get 50% off your seasons ticket!</h2>
           <p>
             Neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
           </p>
@@ -72,26 +87,35 @@
 
       <section id="category">
         <div class="wrapper x-constraint">
-          <h2>Shop category</h2>
+          <h2 class="h2">Featured products</h2>
           <div class="products-row">
-            <div class="product-card">
-              <img src="https://via.placeholder.com/300x400.png" alt="Placeholder for product image">
-              <h3>
-                Product 1 name
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656047590/wm-theme-park/billow926-dSpN8Zi5BIg-unsplash_pslxrm.jpg"
+                alt="Close up image of candies"
+              >
+              <h3 class="h3">
+                Belly Jellies
               </h3>
               <p>In culpa qui officia deserunt mollit</p>
             </div>
-            <div class="product-card">
-              <img src="https://via.placeholder.com/300x400.png" alt="Placeholder for product image">
-              <h3>
-                Product 2 name
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656047593/wm-theme-park/henry-becerra-u1ghoiho43g-unsplash_vk5cue.jpg"
+                alt="Close up image of chocolates"
+              >
+              <h3 class="h3">
+                Chocoholic's delight
               </h3>
               <p>Do eiusmod tempor incididunt ut labore</p>
             </div>
-            <div class="product-card">
-              <img src="https://via.placeholder.com/300x400.png" alt="Placeholder for product image">
-              <h3>
-                Product 3 name
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_400/v1656047777/wm-theme-park/bruna-branco-2UfJPzlEKqg-unsplash_k5he4f.jpg"
+                alt="Image of toffee baked goods on a table"
+              >
+              <h3 class="h3">
+                Toffee Pops
               </h3>
               <p>Quis autem vel eum iure reprehenderit</p>
             </div>

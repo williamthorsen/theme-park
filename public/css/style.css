@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 :root {
-  --primary: #ff69b4;
-  --secondary: #444;
-  --section-padding-y: 40px;
+  --primary: #008bc6;
+  --secondary: #ee2e8b;
+  --section-padding-y: 60px;
   --section-padding-x: 20px;
+  --x-gap: 40px;
 }
 
 /* ----- COMMON ELEMENTS ----- */
@@ -21,7 +22,7 @@ body {
   color: #555;
   font-family: Nunito, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   overflow-x: hidden;
 }
 
@@ -33,6 +34,10 @@ body {
 
 main {
   flex-grow: 2;
+}
+
+p {
+  line-height: 145%;
 }
 
 /* GENERAL LAYOUT */
@@ -54,11 +59,70 @@ main {
 /* HEADINGS */
 .h1 {
   font-family: "Cherry Swash", "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 4px;
+}
+
+.h2 {
+  font-family: "Cherry Swash", "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #444;
+  line-height: 135%;
+  margin-bottom: 20px;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 135%;
+  color: #333;
+}
+
+.h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: 1rem;
+  height: 26px;
+  width: 26px;
+  color: var(--secondary);
 }
 
 /* LINKS */
+a,
+.text-link {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover,
+a:visited {
+  color: #e84494;
+}
 
 /* BUTTONS */
+.primary-button,
+.outlined-button {
+  background-color: var(--secondary);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+}
+
+.outlined-button {
+  background-color: #fff;
+  color: #333;
+}
 
 /* NAVBAR */
 .navbar {
@@ -69,6 +133,7 @@ main {
 .navbar .flex-grow {
   display: flex;
   flex-direction: row;
+  font-weight: 600;
   align-items: center;
   gap: 20px;
 }
@@ -77,24 +142,32 @@ main {
   padding: 4px var(--section-padding-x);
 }
 
+.navbar .active {
+  border-bottom: 2px solid var(--secondary);
+}
+
 .logo-font {
   font-family: "Lobster Two", "Times New Roman", serif;
+  font-weight: 400;
   font-size: 2.3rem;
   padding: 4px 0;
+  margin-bottom: 3px;
 }
 
 a.logo-font:link,
 a.logo-font:visited {
   color: var(--primary);
-  text-decoration: none;
 }
-
 /* FOOTER */
+footer {
+  background-color: #eee;
+  color: #000;
+}
 
 footer .content {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--x-gap);
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
@@ -102,21 +175,28 @@ footer .content div {
   flex-grow: 1;
 }
 
+footer ul {
+  padding-left: 18px;
+}
+
 /* ----- END COMMON ELEMENTS ----- */
 
 /* ----- HOME PAGE ----- */
 header.landing {
   position: relative;
-  margin-bottom: var(--section-padding-y);
 }
 
 header.landing img {
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
+  max-height: 30rem;
+  object-position: center;
+  z-index: -10;
 }
 
 header.landing .content {
+  background: linear-gradient(transparent, rgb(0 0 0 / 40%));
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +206,7 @@ header.landing .content {
 header.landing .content,
 header.landing .content div {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 5px);
 }
 
 header.landing .content div {
@@ -137,11 +217,17 @@ header.landing .content div {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.hero {
+.banner {
+  background-color: var(--primary);
+  color: white;
+  margin-top: -5px;
+}
+
+.banner .hero {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.hero div {
+.banner .hero div {
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +244,7 @@ header.landing .content div {
 #attractions .attractions {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--section-padding-x);
   width: 100%;
 }
 
@@ -168,22 +254,28 @@ header.landing .content div {
   flex-direction: column;
 }
 
-#attractions .attraction img {
+.card img {
   width: 100%;
+  margin-bottom: 8px;
+  object-fit: cover;
+  height: 400px;
+  border-radius: 15px;
 }
 
 #social .content {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--section-padding-x);
   padding: var(--section-padding-y) var(--section-padding-x);
+  padding-top: 0;
 }
 
-#social .content div {
+#social .card {
   flex-grow: 1;
   border: 1px solid grey;
   display: flex;
   flex-direction: column;
+  padding: 16px 20px;
 }
 
 /* ----- END HOME PAGE ----- */
@@ -191,39 +283,53 @@ header.landing .content div {
 /* ----- ATTRACTION PAGE ----- */
 
 .attraction-hero {
-  background-image: url("https://via.placeholder.com/1200x400.png");
+  background-image: url("https://res.cloudinary.com/db8eidwqd/image/upload/c_scale,w_2000/v1656039885/wm-theme-park/dougp-Uh7-SkGMBho-unsplash_gsug7g.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 20rem;
+  min-height: 40rem;
+  position: relative;
+}
+
+.attraction-hero .wrapper {
+  background: linear-gradient(transparent, rgb(0 0 0 / 30%));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 .attraction-hero .content,
 .attraction-hero {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .attraction-hero .content {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.attraction-hero .quote-wrapper {
-  flex-grow: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
+.attraction-hero .h1 {
+  color: white;
+  margin-bottom: -10px;
 }
 
 .attraction-hero .quote {
-  background-color: rgba(255, 255, 255, 60%);
+  background-color: rgb(255 255 255 / 70%);
   padding: 30px;
+  color: #000;
+  font-size: 20px;
 }
 
 #attraction-overview {
-  background-color: rgba(238, 238, 238, 60%);
+  background-color: rgb(238 238 238 / 60%);
 }
 
 #attraction-overview .content {
@@ -231,27 +337,42 @@ header.landing .content div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #attraction-restrictions {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  text-transform: uppercase;
-  font-size: 0.875rem;
+  align-items: center;
+  gap: 40px;
+}
+
+#attraction-restrictions .h4 {
+  margin-bottom: 0;
+}
+
+#attraction-restrictions .stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
 }
 
 #attraction-description .content {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: var(--section-padding-x);
   grid-template-columns: 1fr 33%;
   padding: var(--section-padding-y) var(--section-padding-x);
-
 }
 
 #attraction-description .copy {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
+}
+
+#attraction-description .details {
+  margin: 12px 0 0 16px;
 }
 
 #attraction-description img {
@@ -264,20 +385,14 @@ header.landing .content div {
 /* ----- SHOP PAGE ----- */
 
 #categories .wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+  display: grid;
+  grid-gap: var(--section-padding-x);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-#categories .category {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#categories .category img {
-  width: 100%;
+#categories .card img {
+  height: 300px;
 }
 
 #promotions {
@@ -297,18 +412,12 @@ header.landing .content div {
 }
 
 #category .products-row {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+  display: grid;
+  grid-gap: var(--section-padding-x);
+  grid-template-columns: 33% 33% 33%;
 }
 
-#category .product-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#category .product-card img {
+#category .card img {
   max-height: 18rem;
 }
 
