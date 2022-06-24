@@ -22,7 +22,7 @@ body {
   color: #555;
   font-family: Nunito, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ p {
 .h1 {
   font-family: "Cherry Swash", "Times New Roman", serif;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 125%;
   margin-bottom: 4px;
 }
@@ -133,6 +133,7 @@ a:visited {
 .navbar .flex-grow {
   display: flex;
   flex-direction: row;
+  font-weight: 600;
   align-items: center;
   gap: 20px;
 }
