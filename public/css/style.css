@@ -59,6 +59,16 @@ main {
 /* LINKS */
 
 /* BUTTONS */
+.primary-button,
+.outlined-button {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+}
 
 /* NAVBAR */
 .navbar {
@@ -114,9 +124,13 @@ header.landing img {
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
+  max-height: 30rem;
+  object-position: center;
+  z-index: -10;
 }
 
 header.landing .content {
+  background: linear-gradient(transparent, rgb(0 0 0 / 40%));
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +140,7 @@ header.landing .content {
 header.landing .content,
 header.landing .content div {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 5px);
 }
 
 header.landing .content div {
@@ -218,12 +232,12 @@ header.landing .content div {
 }
 
 .attraction-hero .quote {
-  background-color: rgba(255, 255, 255, 60%);
+  background-color: rgb(255 255 255 / 60%);
   padding: 30px;
 }
 
 #attraction-overview {
-  background-color: rgba(238, 238, 238, 60%);
+  background-color: rgb(238 238 238 / 60%);
 }
 
 #attraction-overview .content {
@@ -246,7 +260,6 @@ header.landing .content div {
   grid-gap: 30px;
   grid-template-columns: 1fr 33%;
   padding: var(--section-padding-y) var(--section-padding-x);
-
 }
 
 #attraction-description .copy {
