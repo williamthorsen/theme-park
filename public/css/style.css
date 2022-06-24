@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 :root {
-  --primary: #ff69b4;
-  --secondary: #f69707;
+  --primary: #008bc6;
+  --secondary: #ee2e8b;
   --section-padding-y: 60px;
   --section-padding-x: 20px;
   --x-gap: 40px;
@@ -95,18 +95,18 @@ a {
 }
 
 a:hover {
-  color: #faaf36;
+  color: #e84494;
 }
 
 /* BUTTONS */
 .primary-button,
 .outlined-button {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: #fff;
   font-size: 16px;
   padding: 10px 16px;
   border-radius: 5px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
 }
 
 .outlined-button {
@@ -137,6 +137,7 @@ a:hover {
   font-weight: 400;
   font-size: 2.3rem;
   padding: 4px 0;
+  margin-bottom: 3px;
 }
 
 a.logo-font:link,
@@ -145,7 +146,7 @@ a.logo-font:visited {
 }
 /* FOOTER */
 footer {
-  background-color: var(--secondary);
+  background-color: #eee;
   color: #000;
 }
 
@@ -202,17 +203,17 @@ header.landing .content div {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-#welcome {
+.banner {
   background-color: var(--primary);
   color: white;
   margin-top: -5px;
 }
 
-#welcome .hero {
+.banner .hero {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-#welcome .hero div {
+.banner .hero div {
   display: flex;
   flex-direction: column;
 }
