@@ -79,6 +79,7 @@ p {
   font-weight: 700;
   margin-bottom: 8px;
   line-height: 135%;
+  color: #333;
 }
 
 .h4 {
@@ -347,7 +348,7 @@ header.landing .content div {
 #categories .wrapper {
   display: grid;
   grid-gap: var(--section-padding-x);
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
@@ -372,18 +373,12 @@ header.landing .content div {
 }
 
 #category .products-row {
-  display: flex;
-  flex-direction: row;
-  gap: var(--section-padding-x);
+  display: grid;
+  grid-gap: var(--section-padding-x);
+  grid-template-columns: 33% 33% 33%;
 }
 
-#category .product-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#category .product-card img {
+#category .card img {
   max-height: 18rem;
 }
 
