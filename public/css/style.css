@@ -240,7 +240,7 @@ header.landing .content div {
   flex-direction: column;
 }
 
-#attractions .attraction img {
+.card img {
   width: 100%;
   margin-bottom: 8px;
   object-fit: cover;
@@ -341,20 +341,14 @@ header.landing .content div {
 /* ----- SHOP PAGE ----- */
 
 #categories .wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: var(--section-padding-x);
+  display: grid;
+  grid-gap: var(--section-padding-x);
+  grid-template-columns: 24% 24% 24% 24%;
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-#categories .category {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#categories .category img {
-  width: 100%;
+#categories .card img {
+  height: 300px;
 }
 
 #promotions {
