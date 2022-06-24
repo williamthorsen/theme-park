@@ -367,6 +367,11 @@ header.landing .content div {
 #attraction-description .copy {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
+}
+
+#attraction-description .details {
+  margin: 12px 0 0 16px;
 }
 
 #attraction-description img {
