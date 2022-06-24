@@ -3,7 +3,7 @@
 :root {
   --primary: #ff69b4;
   --secondary: #f69707;
-  --section-padding-y: 40px;
+  --section-padding-y: 60px;
   --section-padding-x: 20px;
 }
 
@@ -35,6 +35,10 @@ main {
   flex-grow: 2;
 }
 
+p {
+  line-height: 145%;
+}
+
 /* GENERAL LAYOUT */
 .x-constraint {
   max-width: 1200px;
@@ -54,6 +58,26 @@ main {
 /* HEADINGS */
 .h1 {
   font-family: "Cherry Swash", "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 4px;
+}
+
+.h2 {
+  font-family: "Cherry Swash", "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #444;
+  line-height: 135%;
+  margin-bottom: 20px;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 135%;
 }
 
 /* LINKS */
@@ -188,7 +212,7 @@ header.landing .content div {
 #attractions .attractions {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
 }
 
@@ -200,6 +224,9 @@ header.landing .content div {
 
 #attractions .attraction img {
   width: 100%;
+  margin-bottom: 4px;
+  object-fit: cover;
+  height: 400px;
 }
 
 #social .content {
