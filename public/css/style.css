@@ -5,6 +5,7 @@
   --secondary: #f69707;
   --section-padding-y: 60px;
   --section-padding-x: 20px;
+  --x-gap: 40px;
 }
 
 /* ----- COMMON ELEMENTS ----- */
@@ -151,7 +152,7 @@ footer {
 footer .content {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: var(--x-gap);
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
@@ -228,7 +229,7 @@ header.landing .content div {
 #attractions .attractions {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: var(--section-padding-x);
   width: 100%;
 }
 
@@ -249,7 +250,7 @@ header.landing .content div {
 #social .content {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: var(--section-padding-x);
   padding: var(--section-padding-y) var(--section-padding-x);
   padding-top: 0;
 }
@@ -312,14 +313,14 @@ header.landing .content div {
 #attraction-restrictions {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--section-padding-x);
   text-transform: uppercase;
   font-size: 0.875rem;
 }
 
 #attraction-description .content {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: var(--section-padding-x);
   grid-template-columns: 1fr 33%;
   padding: var(--section-padding-y) var(--section-padding-x);
 }
@@ -341,7 +342,7 @@ header.landing .content div {
 #categories .wrapper {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--section-padding-x);
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
@@ -374,7 +375,7 @@ header.landing .content div {
 #category .products-row {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--section-padding-x);
 }
 
 #category .product-card {
