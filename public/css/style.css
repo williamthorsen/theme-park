@@ -128,7 +128,6 @@ footer .content div {
 /* ----- HOME PAGE ----- */
 header.landing {
   position: relative;
-  margin-bottom: var(--section-padding-y);
 }
 
 header.landing img {
@@ -162,11 +161,17 @@ header.landing .content div {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.hero {
+#welcome {
+  background-color: var(--primary);
+  color: white;
+  margin-top: -5px;
+}
+
+#welcome .hero {
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 
-.hero div {
+#welcome .hero div {
   display: flex;
   flex-direction: column;
 }
